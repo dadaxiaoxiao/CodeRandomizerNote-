@@ -51,7 +51,7 @@ func search(nums []int, target int) int {
 
 注意点： right 的启始位置是 len(nums)-1
 
-##### 2.左闭右开区间法**[left, right）**
+##### 2.左闭右开区间法[left, right）
 
 - while (left < right)
 - if (nums[middle] > target) right 要赋值为 middle ，区间左移
