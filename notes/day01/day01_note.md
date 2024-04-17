@@ -49,7 +49,7 @@ func search(nums []int, target int) int {
 }
 ```
 
-注意点： right 的其实位置是 len(nums)-1
+注意点： right 的启始位置是 len(nums)-1
 
 ##### 2.左闭右开区间法**[left, right）**
 
@@ -78,7 +78,7 @@ func search(nums []int, target int) int {
 }
 ```
 
-注意点： right 的其实位置是 len(nums)
+注意点： right 的启始位置是 len(nums)
 
 
 
