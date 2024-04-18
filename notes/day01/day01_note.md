@@ -82,6 +82,14 @@ func search(nums []int, target int) int {
 
 
 
+整理如下：（图片来自代码随想录）
+
+![](picture/Snipaste_2024-04-18_11-48-11.png)
+
+
+
+
+
 #### 代码与测试用例
 
 [完整代码实现](https://github.com/dadaxiaoxiao/CodeRandomizerNote-/blob/main/leetcodeCode/leetcode0704/binary_search.go)
