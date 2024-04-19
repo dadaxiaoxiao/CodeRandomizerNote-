@@ -41,5 +41,7 @@ func reverse(pre, head *ListNode) *ListNode {
 	next := head.Next
 	// 指针域反转
 	head.Next = pre
+
+	// pre = head  head = next
 	return reverse(head, next)
 }
