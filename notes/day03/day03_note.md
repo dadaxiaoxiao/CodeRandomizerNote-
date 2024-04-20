@@ -96,6 +96,30 @@ func removeElements(head *ListNode, val int) *ListNode {
 
 题解：
 
+1.这里使用了哨兵头节点（虚拟头节点），这样可以公用一套链表添加新节点规则，用size 字段统计节点个数
+
+1.AddAtHead，AddAtTail ， AddAtIndex 可以当成 AddAtHead ，AddAtTail  调用 AddAtIndex 。 AddAtIndex （0，value）为添加头节点， AddAtIndex （size，value） 代表添加尾部节点。这里 的注意事项是， **遍历到指定索引的前一个节点**。然后使用链表节点添加规则 ![](picture/Snipaste_2024-04-20_00-06-58.png)
+
+![](picture/Snipaste_2024-04-20_09-49-54.png)
+
+2.get 方法的注意实现，current 为真正的开始节点，遍历到指定索引节点![](picture/Snipaste_2024-04-20_09-49-17.png)
+
+![](picture/Snipaste_2024-04-20_09-50-19.png)
+
+3.DeleteAtIndex  注意事项， **遍历到指定索引的前一个节点**![](picture/Snipaste_2024-04-20_09-52-47.png)
+
+![](picture/Snipaste_2024-04-20_09-51-40.png)
+
+
+
+
+
+
+
+
+
+
+
 待完成
 
 实现代码：
