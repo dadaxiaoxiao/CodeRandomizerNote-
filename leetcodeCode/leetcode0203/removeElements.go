@@ -15,7 +15,7 @@ func removeElements(head *ListNode, val int) *ListNode {
 	dummyNode.Next = head
 	// 新建 cur 暂存节点用来遍历
 	cur := dummyNode
-
+	// cur != nil 这种判断条件是 避免删除尾节点
 	for cur != nil && cur.Next != nil {
 		if cur.Next.Val == val {
 			// 变更当前指针的指针域

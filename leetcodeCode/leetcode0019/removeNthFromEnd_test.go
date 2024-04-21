@@ -1,38 +1,40 @@
-package leetcode0024
+package leetcode0019
 
 import (
-	"testing"
-
 	"github.com/go-playground/assert/v2"
+	"testing"
 )
 
-func TestSwapPairs(t *testing.T) {
-
+func TestRemoveNthFromEnd(t *testing.T) {
 	testCases := []struct {
 		name    string
 		input   []int
+		n       int
 		wantRes []int
 	}{
 		{
-			name:    "head =[1,2,3,4]",
-			input:   []int{1, 2, 3, 4},
-			wantRes: []int{2, 1, 4, 3},
+			name:    "head =[1,2,3,4,5] n=2",
+			input:   []int{1, 2, 3, 4, 5},
+			n:       2,
+			wantRes: []int{1, 2, 3, 5},
 		},
 		{
-			name:    "head =[]",
-			input:   []int{},
+			name:    "head =[1] n=1",
+			input:   []int{1},
+			n:       1,
 			wantRes: []int{},
 		},
 		{
-			name:    "head =[1]",
-			input:   []int{1},
+			name:    "head =[1,2] n=1",
+			input:   []int{1, 2},
+			n:       1,
 			wantRes: []int{1},
 		},
 	}
 
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
-			res := swapPairs(arrayToListNodes(tc.input))
+			res := removeNthFromEnd(arrayToListNodes(tc.input), tc.n)
 			assert.Equal(t, tc.wantRes, listNodesToArray(res))
 
 		})
