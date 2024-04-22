@@ -1,5 +1,7 @@
 package leetcode0202
 
+// isHappy
+// leetcode 202. 快乐数
 func isHappy(n int) bool {
 	set := make(map[int]bool)
 	// 循环跳出条件 n = 1 或者 无限循环（这里就是 set[n] == true, 哈希表存在元素）
