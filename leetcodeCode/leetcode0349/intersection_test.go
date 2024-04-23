@@ -1,4 +1,4 @@
-package leetcod0349
+package leetcode0349
 
 import (
 	"testing"

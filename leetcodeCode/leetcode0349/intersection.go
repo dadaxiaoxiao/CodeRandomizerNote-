@@ -1,4 +1,4 @@
-package leetcod0349
+package leetcode0349
 
 // intersection
 // leetcode  349. 两个数组的交集

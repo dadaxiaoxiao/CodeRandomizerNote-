@@ -277,8 +277,8 @@ func reverseList(head *ListNode) *ListNode {
 	return reverse(nil, head)
 }
 
-func reverse(pre, head *ListNode) *ListNode {
-	if head == nil {
+func reverse(pre, cur *ListNode) *ListNode {
+	if cur == nil {
 		return pre
 	}
 	// 下一个指针节点
